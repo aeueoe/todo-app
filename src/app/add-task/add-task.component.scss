@@ -1,0 +1,78 @@
+mat-card {
+  border-radius: 18px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: auto;
+  }
+}
+mat-card-header {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+mat-card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--black);
+}
+mat-card-content {
+  padding: 16px 0;
+}
+
+.task-input {
+  border-radius: 10px;
+  border: 1px solid var(--gray-30);
+  background-color: var(--white);
+  min-height: 150px;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+.task-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 0;
+}
+
+mat-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-icon {
+  color: var(--gray-70);
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 13px 24px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+.btn-cancel {
+  border: 1px solid var(--gray-30);
+  color: var(--black);
+  background-color: transparent;
+}
+
+.btn-save {
+  background-color: var(--blue-color);
+  color: var(--white);
+}
