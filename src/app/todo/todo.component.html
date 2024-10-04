@@ -1,0 +1,18 @@
+<div class="overlay" *ngIf="isOverlayVisible"></div>
+
+<main class="todo-container">
+    <section class="todo-body">
+        <h1 class="todo-header">
+            👋🏼 <span>Hi {{ userName }}</span>, here are your tasks
+        </h1>
+        <div class="todo-list">
+            <app-task-item *ngFor="let task of tasks" [task]="task" (complete)="onTaskComplete($event)"
+                (edit)="onEdit($event)" (delete)="onDelete($event)"></app-task-item>
+        </div>
+        
+        <button class="add-task" mat-stroked-button disableRipple (click)="openAddTaskDialog()">
+            <mat-icon>add</mat-icon> <span>Add new</span>
+        </button>
+
+    </section>
+</main>
