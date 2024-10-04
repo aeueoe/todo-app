@@ -6,8 +6,7 @@ You can now use the TodoApp in your browser
 - Mark tasks as completed
 - Edit or delete tasks
 - **Tasks are stored in the app's memory, meaning changes are not saved when the page is refreshed or closed**
-- Responsive design 
-
+- Responsive design
 
 # TodoApp
 
@@ -40,12 +39,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
 ## Contributing
+
 Contributions are welcome!
 If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome 🙂
 
-
-Fork the repository
-Create your feature branch: git checkout -b my-new-feature
-Commit your changes: git commit -m 'Add some feature'
-Push to the branch: git push origin my-new-feature
-Submit a pull request
+- Fork the repository
+- Create your feature branch: git checkout -b my-new-feature
+- Commit your changes: git commit -m 'Add some feature'
+- Push to the branch: git push origin my-new-feature
+- Submit a pull request
