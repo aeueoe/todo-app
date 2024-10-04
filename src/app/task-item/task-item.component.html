@@ -1,0 +1,30 @@
+<div class="task-item" [class.completed]="task.completed">
+    <div class="task-info">
+        <label class="custom-checkbox">
+            <input type="checkbox" [(ngModel)]="task.completed" (change)="onTaskComplete(task)">
+
+            <span class="checkmark"></span>
+        </label>
+        <span class="task-text" [ngClass]="{'strike-through': task.completed}">{{ task.text }}</span>
+    </div>
+    <div class="task-actions">
+        <div class="user-info">
+            <span class="user-name">{{ userName }}</span>
+            <img src="\assets\user_icon.png" alt="User Photo" class="user-icon">
+        </div>
+        <button mat-icon-button disableRipple [matMenuTriggerFor]="menu" #menuTrigger="matMenuTrigger">
+            <mat-icon [class.active-icon]="menuTrigger.menuOpen">more_horiz</mat-icon>
+        </button>
+        <mat-menu class="menu custom-menu" #menu="matMenu" [xPosition]="'before'" [yPosition]="'below'"
+            panelClass="custom-menu-overlay">
+            <button mat-menu-item (click)="onEdit()">
+                <span class="flip">✏️</span> <span class="menu-action">Edit</span>
+            </button>
+            <button mat-menu-item (click)="onDelete()">
+                🗑️ <span class="menu-action">Delete</span>
+            </button>
+        </mat-menu>
+
+
+    </div>
+</div>

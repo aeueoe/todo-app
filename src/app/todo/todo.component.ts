@@ -46,7 +46,8 @@ export class TodoComponent {
   openAddTaskDialog(): void {
     this.isOverlayVisible = true;
     const dialogRef = this.dialog.open(AddTaskComponent, {
-      });
+      width: '390px',
+    });
 
     dialogRef.afterClosed().subscribe((result) => {
       if (result) {
@@ -63,6 +64,7 @@ export class TodoComponent {
   onEdit(task: any) {
     this.isOverlayVisible = true;
     const dialogRef = this.dialog.open(AddTaskComponent, {
+      width: '390px',
       data: task,
     });
 

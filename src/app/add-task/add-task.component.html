@@ -1,0 +1,17 @@
+<mat-card class="new-task">
+    <mat-card-header>
+        <mat-card-title>Add task</mat-card-title>
+        <button mat-icon-button disableRipple (click)="onCancel()" aria-label="Close dialog" class="close-icon">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-card-header>
+
+    <mat-card-content>
+        <textarea class="task-input" matInput [(ngModel)]="task" placeholder="What do you need to do..."></textarea>
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+        <button class="btn btn-cancel" mat-button (click)="onCancel()">Cancel</button>
+        <button class="btn btn-save" mat-button (click)="onSave()">Save</button>
+    </mat-card-actions>
+</mat-card>
